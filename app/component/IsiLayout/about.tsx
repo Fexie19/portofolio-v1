@@ -1,4 +1,13 @@
-const About = ({isi1, isi2, judul}:string) => {
+
+
+
+
+
+const About = () => {
+  const judul = "About Me";
+  const isi1 = "I'm Full Stack Devolper from Bekasi, Indonesia, Studying at IPB University.";
+  const isi2 = "ini paragraf 2";
+  
   return(
     <>
       <div className="h-fit flex justify-center flex-col">

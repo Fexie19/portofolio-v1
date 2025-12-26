@@ -23,7 +23,7 @@ const pendidikan3: template = {
   des : "Sempat menempuh pendidikan di SMAN 5 Kota Bekasi dan berpindah ke SMAN 5 Kota Pekanbaru",
 }
 
-const IsiResume = ({isi}) => {
+const IsiResume = ({isi}:any) => {
   return(
     <div className="bg-neutral-900">
         <div>
@@ -41,7 +41,7 @@ const IsiResume = ({isi}) => {
   )
 }
 
-const PageResume = ({judul}) => {
+const PageResume = ({judul}:any) => {
   return(
     <>
       <div className="gap-20">
