@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 
-const Navbutton = ({isi}) => {
+const Navbutton = ({isi}:any) => {
   return(
     <>
       <Link className="text-neutral-300 font-bold rounded-xl p-3 hover:bg-neutral-800 m-3 hover:outline-neutral-400 hover:outline-1" href="">{isi}</Link>
