@@ -48,7 +48,7 @@ export default function Layout() {
   }
 
   return (
-    <div className="h-fit xl:max-h-screen xl:w-7xl bg-neutral-900 rounded-4xl border-neutral-700 border overflow-y-scroll scrollbar-hide">
+    <div className="min-h-screen xl:max-h-screen xl:w-7xl bg-neutral-900 rounded-4xl border-neutral-700 border overflow-y-scroll scrollbar-hide">
       <Navbar activePage={activePage} onNavClick={setActivePage} />
       <div className="flex m-10 animate-fadeIn">
         {renderPage()}
