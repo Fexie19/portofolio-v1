@@ -7,7 +7,7 @@ import PageResume from "./IsiLayout/resume"
 const Navbutton = ({ label, onClick, active }:any) => {
   return (
     <button
-      className={`text-neutral-300 outline-neutral-600 font-bold rounded-3xl p-5 pt-3 pb-3 m-3 hover:bg-neutral-800 hover:outline-neutral-600 hover:outline-1 transition duration-300 ease-out
+      className={`text-neutral-300 outline-neutral-600 font-bold text-2xs xl:text-xl rounded-3xl p-5 pt-3 pb-3 m-3 hover:bg-neutral-800 hover:outline-neutral-600 hover:outline-1 transition duration-300 ease-out hidden md:block
         ${active 
           ? "bg-neutral-800 outline-1 outline-neutral-600" 
           : ""
@@ -22,7 +22,7 @@ const Navbutton = ({ label, onClick, active }:any) => {
 const Navbar = ({ activePage, onNavClick }:any) => {
   return (
     <div className="max-h-17 bg-neutral-1000 flex items-center justify-center rounded-3xl">
-      <nav className="flex gap-10 mr-10 ml-10">
+      <nav className="flex gap-5 lg:gap-10 mr-10 ml-10">
         <Navbutton label="About" active={activePage==="about"} onClick={() => onNavClick("about")} />
         <Navbutton label="Resume" active={activePage==="resume"} onClick={() => onNavClick("resume")} />
         <Navbutton label="Portfolio" active={activePage==="portfolio"} onClick={() => onNavClick("portfolio")} />
