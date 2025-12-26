@@ -1,4 +1,4 @@
-const About = ({isi1, isi2, judul}) => {
+const About = ({isi1, isi2, judul}:string) => {
   return(
     <>
       <div className="h-fit flex justify-center flex-col">
