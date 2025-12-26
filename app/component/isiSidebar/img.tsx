@@ -1,4 +1,4 @@
-const Profile = () => {
+const ImgProfile = () => {
   return(
     <>
       <img src="Profile.jpg" className="h-50 w-50 rounded-full object-cover object-center"></img>
@@ -7,4 +7,4 @@ const Profile = () => {
 }
 
 
-export default Profile
+export default ImgProfile

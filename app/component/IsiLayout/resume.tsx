@@ -44,7 +44,7 @@ const IsiResume = ({isi}:any) => {
           <h1 className="mb-2 text-xl text-cyan-500">
             {isi.tahun}
           </h1>
-          <p className="text-xl text-neutral-400">
+          <p className="text-2xs text-neutral-400">
             {isi.des}
           </p>
         </div>
@@ -54,7 +54,7 @@ const IsiResume = ({isi}:any) => {
 
 const Isinya = ({yaya}:any) => {
   return(
-   <>
+    <>
       <div className="flex flex-col gap-10">
         <h1 className="font-bold text-4xl">{yaya}</h1>
         <IsiResume isi={pendidikan1}/>
@@ -68,7 +68,7 @@ const Isinya = ({yaya}:any) => {
 
 const Pengalaman = ({yaya}:any) => {
   return(
-   <>
+  <>
       <div className="flex flex-col gap-10">
         <h1 className="font-bold text-4xl">{yaya}</h1>
         <IsiResume isi={Pengalaman1}/>
@@ -81,10 +81,10 @@ const Pengalaman = ({yaya}:any) => {
 const PageResume = () => {
   return(
     <>
-    <div className="flex xl:flex-row gap-20 flex-col">
-      <Isinya yaya="Pendidikan"/>
-      <Pengalaman yaya="Pengalaman"/>
-    </div>
+      <div className="flex xl:flex-row gap-20 flex-col animate-fadeIn">
+        <Isinya yaya="Pendidikan"/>
+        <Pengalaman yaya="Pengalaman"/>
+      </div>
     </>
   )
 }

@@ -7,7 +7,7 @@ import PageResume from "./IsiLayout/resume"
 const Navbutton = ({ label, onClick, active }:any) => {
   return (
     <button
-      className={`text-neutral-300 outline-neutral-600 font-bold text-2xs xl:text-xl rounded-3xl p-5 pt-3 pb-3 m-3 hover:bg-neutral-800 hover:outline-neutral-600 hover:outline-1 transition duration-300 ease-out hidden md:block
+      className={`text-neutral-300 outline-neutral-600 font-bold text-2xs xl:text-3xs rounded-3xl p-5 pt-3 pb-3 m-3 hover:bg-neutral-800 hover:outline-neutral-600 hover:outline-1 transition duration-300 ease-out hidden md:block
         ${active 
           ? "bg-neutral-800 outline-1 outline-neutral-600" 
           : ""
@@ -48,7 +48,7 @@ export default function Layout() {
   }
 
   return (
-    <div className="h-fit xl:min-h-screen xl:w-7xl bg-neutral-900 rounded-4xl border-neutral-700 border">
+    <div className="h-fit xl:max-h-screen xl:w-7xl bg-neutral-900 rounded-4xl border-neutral-700 border overflow-y-scroll scrollbar-hide">
       <Navbar activePage={activePage} onNavClick={setActivePage} />
       <div className="flex m-10 animate-fadeIn">
         {renderPage()}
