@@ -36,7 +36,7 @@ const Pengalaman1: template = {
 
 const IsiResume = ({isi}:any) => {
   return(
-    <div className="bg-neutral-900">
+    <div>
         <div>
           <h1 className="mb-1 text-xl font-bold">
             {isi.satu}
@@ -81,7 +81,7 @@ const Pengalaman = ({yaya}:any) => {
 const PageResume = () => {
   return(
     <>
-      <div className="flex xl:flex-row gap-20 flex-col animate-fadeIn">
+      <div className="flex xl:flex-row gap-20 flex-col animate-fadeIn divide-x divide-neutral-800">
         <Isinya yaya="Pendidikan"/>
         <Pengalaman yaya="Pengalaman"/>
       </div>

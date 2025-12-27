@@ -18,7 +18,7 @@ const resume = PageResume;
 const Navbar = () => {
   return(
     <>
-      <div className="max-h-17 bg-neutral-900 flex items-center justify-center rounded-3xl outline-[0.5]">
+      <div className="max-h-17 bg-neutral-900 flex items-center justify-center">
           <nav className=" flex gap-10 mr-10 ml-10">
           <Navbutton isi ="About"/>
           <Navbutton isi ="Resume"/>

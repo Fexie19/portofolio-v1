@@ -1,7 +1,7 @@
 const ImgProfile = () => {
   return(
     <>
-      <img src="Profile.jpg" className="max-h-50 max-w-50 rounded-full object-cover object-center"></img>
+      <img src="Profile.jpg" className="max-h-40 max-w-40 rounded-full object-cover object-center"></img>
     </>
   )
 }
